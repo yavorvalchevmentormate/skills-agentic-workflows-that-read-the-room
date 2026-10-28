@@ -2,7 +2,8 @@
 name: update-github-info
 description: Keep GitHub Info current with practical updates from the official GitHub Blog and Changelog.
 on:
-  schedule: daily
+  schedule:
+    - cron: "0 9 1 1 *"
   workflow_dispatch:
 permissions:
   contents: read
